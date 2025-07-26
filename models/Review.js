@@ -8,7 +8,7 @@ const reviewDetailSchema = new mongoose.Schema({
 }, { _id: false }) // ← _id を review に付けたくないなら false
 
 const reviewSchema = new mongoose.Schema({
-    videoId: String,
+    id: String,
     title:String,
     image:String,
     review: reviewDetailSchema, // ✅ここを review: { ... } ではなく reviewDetailSchema にする
