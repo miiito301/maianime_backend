@@ -9,7 +9,7 @@ dotenv.config()
 
 const app = express()
 app.use(cors({
-  origin: "https://maianimefrontend.vercel.app/" // ←あなたのVercelの本番URLに変更
+  origin: "https://maianimefrontend.vercel.app" // ←あなたのVercelの本番URLに変更
 }));
 app.use(express.json())
 
