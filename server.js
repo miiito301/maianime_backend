@@ -16,6 +16,10 @@ app.use(express.json())
 // ルーティング
 app.use('/api/reviews', reviewRoutes)
 
+app.use((req, res, next) => {
+  console.log("📦 Received body:", req.body)
+  next()
+})
 
 // DB接続
 
