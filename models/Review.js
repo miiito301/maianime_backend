@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 // ✅ review フィールドのネスト構造をサブスキーマで明示
 const reviewDetailSchema = new mongoose.Schema({
   name: String,
-  WhichList: Number,
+  WhichList: String,
 }, { _id: false }) // ← _id を review に付けたくないなら false
 
 const reviewSchema = new mongoose.Schema({
